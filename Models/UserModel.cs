@@ -1,8 +1,15 @@
-﻿namespace JWTPractice.Models
+﻿using Microsoft.AspNetCore.Identity;
+using System.ComponentModel.DataAnnotations;
+
+namespace JWTPractice.Models
 {
     public class UserModel
     {
-        public string userName { get; set; }
-        public string password { get; set; }
+        public int Id { get; set; }
+        public string Username { get; set; }
+        public string Password { get; set; }
+        public string Role { get; set; }
+
+
     }
 }
